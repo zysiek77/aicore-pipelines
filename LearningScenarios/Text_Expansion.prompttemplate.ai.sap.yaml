@@ -1,6 +1,6 @@
 name: text_expansion
 version: 1.1.1
-scenario: text-expansion-processing
+scenario: orchestration
 spec:
   template:
     - role: "system"
