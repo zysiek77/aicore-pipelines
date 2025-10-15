@@ -7,6 +7,7 @@ metadata:
     scenarios.ai.sap.com/name: "First-Pipeline-azy"
     executables.ai.sap.com/description: "Greets the user"
     executables.ai.sap.com/name: "Hello-Pipeline-azy"
+		ai.sap.com/serviceDeletionStrategy: "delete"
   labels:
     scenarios.ai.sap.com/id: "Hello-Pipeline-azy"
     ai.sap.com/version: "1.0"
