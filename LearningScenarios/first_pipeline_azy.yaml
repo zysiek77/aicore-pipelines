@@ -1,19 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: WorkflowTemplate
 metadata:
-  name: hello-pipeline-azy # Executable ID (max length 64 lowercase-hyphen-separated), please modify this to any value if you are not the only user of your SAP AI Core instance. Example: `first-pipeline-1234`
+  name: first-pipeline-azy # Executable ID (max length 64 lowercase-hyphen-separated), please modify this to any value if you are not the only user of your SAP AI Core instance. Example: `first-pipeline-1234`
   annotations:
     scenarios.ai.sap.com/description: "Introduction to SAP AI Core 3.0"
-    scenarios.ai.sap.com/name: "Hello-Pipeline"
+    scenarios.ai.sap.com/name: "First-Pipeline-azy"
     executables.ai.sap.com/description: "Greets the user"
-    executables.ai.sap.com/name: "Hello-Pipeline"
+    executables.ai.sap.com/name: "Hello-Pipeline-azy"
   labels:
-    scenarios.ai.sap.com/id: "Hello-Pipeline"
-    ai.sap.com/version: "3.0"
+    scenarios.ai.sap.com/id: "Hello-Pipeline-azy"
+    ai.sap.com/version: "1.0"
 spec:
-  entrypoint: mypipeline
+  entrypoint: mypipeline-azy
   templates:
-  - name: mypipeline
+  - name: mypipeline-azy
     steps:
     - - name: greet
         template: greeter
