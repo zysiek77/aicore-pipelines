@@ -10,7 +10,7 @@ metadata:
     artifacts.ai.sap.com/housepricemodel.kind: "model" # Suggest the kind of artifact to input.
   labels:
     scenarios.ai.sap.com/id: "learning-datalines"
-    ai.sap.com/version: "4.0"
+    ai.sap.com/version: "5.0"
 spec:
   inputs:
     artifacts:
@@ -35,7 +35,7 @@ spec:
         maxReplicas: 3    # how much to scale
         containers:
         - name: kserve-container
-          image: "docker.io/zysiek77/house-server:01"
+          image: "docker.io/zysiek77/house-server:02"
           ports:
             - containerPort: 9001    # customizable port
               protocol: TCP
